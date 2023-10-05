@@ -38,6 +38,7 @@ body {
 }
 
 .header__btn {
+  position: relative;
   float: right;
   line-height: 36px;
   font-family: 'Roboto', sans-serif;
@@ -45,6 +46,14 @@ body {
   background-color: #ffc222;
   padding: 5px 20px 4px 50px;
   font-size: 16px;
+}
+
+.header__btn:before {
+  position: absolute;
+  left: 22px;
+  color: #1b1b1b;
+  content: '\f0b1';
+  font-family: 'icomoon';
 }
 
 .header__contacts:after {
@@ -58,10 +67,26 @@ body {
   color: #cbcacb;
   letter-spacing: 0.25px;
   line-height: 45px;
+  position: relative;
 }
 .header__phone {
   padding-left: 20px;
   padding-right: 30px;
+}
+.header__email:before {
+  position: absolute;
+  left: 0;
+  content: '\f003';
+  font-family: 'icomoon' !important;
+  color: #ffc222;
+}
+
+.header__phone:before {
+  content: '\f095';
+  font-family: 'icomoon';
+  left: 0;
+  color: #ffc222;
+  position: absolute;
 }
 
 .header__email {
@@ -74,4 +99,26 @@ body {
 
 .menu li {
   display: inline-block;
+}
+
+.menu a {
+  color: #323232;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 0px 16px;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.menu a:hover {
+  border-color: #ffc222;
+}
+
+.menu li + li {
+  padding-left: 10px;
+}
+
+.header__content-inner {
+  display: flex;
+  justify-content: space-between;
 }
