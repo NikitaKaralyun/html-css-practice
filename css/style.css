@@ -122,3 +122,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+#dialog-content {
+  display: none;
+}
