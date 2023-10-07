@@ -6,3 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     Fancybox.show([{ src: '#dialog-content', type: 'inline' }]);
   });
 });
+
+$(function () {
+  $('.slider__inner').slick();
+});

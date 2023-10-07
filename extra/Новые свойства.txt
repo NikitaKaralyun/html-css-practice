@@ -35,3 +35,9 @@
 #   border: 1px solid transparent; 
 #   transition: all 0.5s; --- замедляем действие до 0.5 то есть при ховере рамка будет через 0.5 появлстья
 # }
+
+slick нужен для слайдера
+1. get it now - download
+2. себе забирает slick.css и slick.min.js
+3. подрубаем jquery <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+4. далее пишем нужную нам функцию, а в скобках у нее укахываем родительский класс для наших items, которые будут переключаться
